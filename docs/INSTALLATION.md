@@ -53,22 +53,22 @@ cmake -B build -G "Visual Studio 17 2022" -A Win32
 cmake --build build --config Release
 ```
 
-หลังคอมไพล์เสร็จสิ้น จะได้ไฟล์ผลลัพธ์อยู่ที่:
+หลังคอมไพล์เสร็จสิ้น จะได้ไฟล์ผลลัพธ์อยู่ที่ (หรือดาวน์โหลดได้โดยตรงจากโฟลเดอร์ `bin/Release/`):
 ```text
-bin/Release/ImguiPlugin.asi
+bin/Release/chatimgui.asi
 ```
 
 ---
 
 ## 3. การติดตั้งเข้าสู่ตัวเกม (Game Installation)
 
-1. คัดลอกไฟล์ **`ImguiPlugin.asi`** ไปวางไว้ในโฟลเดอร์เกม GTA San Andreas หลักของคุณ (ที่อยู่เดียวกับ `gta_sa.exe` และ `samp.exe`)
+1. คัดลอกไฟล์ **`chatimgui.asi`** ไปวางไว้ในโฟลเดอร์เกม GTA San Andreas หลักของคุณ (ที่อยู่เดียวกับ `gta_sa.exe` และ `samp.exe`)
 2. สร้างโฟลเดอร์ **`Font`** ในไดเรกทอรีเกม และนำฟอนต์ที่ต้องการใช้งาน เช่น **`Prompt-Bold.ttf`** ไปใส่ไว้:
    ```text
    GTA San Andreas/
    ├── gta_sa.exe
    ├── samp.exe
-   ├── ImguiPlugin.asi
+   ├── chatimgui.asi
    ├── Font/
    │   └── Prompt-Bold.ttf
    └── models/
@@ -87,7 +87,7 @@ bin/Release/ImguiPlugin.asi
 
 ### Q: ภาษาไทยแสดงผลเป็นเครื่องหมายคำถาม (?) หรือสี่เหลี่ยม
 - **สาเหตุ**: ตัวเกมไม่พบไฟล์ฟอนต์ `Font/Prompt-Bold.ttf` หรือไม่ได้เปิด Windows Emoji Font
-- **วิธีแก้**: ตรวจสอบว่าวางไฟล์ฟอนต์ไว้ในโฟลเดอร์ `Font/` ข้าง `ImguiPlugin.asi` ถูกต้อง
+- **วิธีแก้**: ตรวจสอบว่าวางไฟล์ฟอนต์ไว้ในโฟลเดอร์ `Font/` ข้าง `chatimgui.asi` ถูกต้อง
 
 ### Q: เข้าเกมแล้วแชท ImGui ไม่แสดงผล หรือแครชทันที
 - **สาเหตุ**: เวอร์ชัน SA-MP ไม่ตรง หรือไม่ได้ลง DirectX End-User Runtime

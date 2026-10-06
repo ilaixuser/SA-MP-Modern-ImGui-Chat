@@ -144,19 +144,19 @@ cmake -B build -G "Visual Studio 17 2022" -A Win32
 cmake --build build --config Release
 ```
 
-ไฟล์ผลลัพธ์จะอยู่ที่: `bin/Release/ImguiPlugin.asi`
+ไฟล์ผลลัพธ์จะอยู่ที่: `bin/Release/chatimgui.asi`
 
 ---
 
 ## 📦 การติดตั้งในเกม (Installation)
 
-1. คัดลอก `ImguiPlugin.asi` ไปวางในโฟลเดอร์เกม GTA San Andreas
+1. คัดลอก `chatimgui.asi` (หรือดาวน์โหลดจากโฟลเดอร์ `bin/Release/`) ไปวางในโฟลเดอร์เกม GTA San Andreas
 2. สร้างโฟลเดอร์ `Font` ในโฟลเดอร์เกม และนำไฟล์ฟอนต์ภาษาไทย (เช่น `Prompt-Bold.ttf`) ไปวางไว้:
    ```text
    GTA San Andreas/
    ├── gta_sa.exe
    ├── samp.exe
-   ├── ImguiPlugin.asi
+   ├── chatimgui.asi
    └── Font/
        └── Prompt-Bold.ttf
    ```

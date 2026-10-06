@@ -1,6 +1,9 @@
-# Build and output directories
+# Build and intermediate directories
 build/
-bin/
+
+# Track Release output binaries, ignore other bin subfolders if any
+bin/*
+!bin/Release/
 
 # Visual Studio & VS Code
 .vscode/
