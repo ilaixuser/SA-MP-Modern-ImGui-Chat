@@ -1,0 +1,12 @@
+# Build and output directories
+build/
+bin/
+
+# Visual Studio & VS Code
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Temporary test files
+font_test.bin
